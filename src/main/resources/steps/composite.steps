@@ -1,0 +1,8 @@
+Composite: When I login as Test User
+Given I am on a page with the URL 'https://hrms-stack-develop.39.paas.epm-eco.projects.epam.com'
+When I find <= '1' elements by By.xpath(//form[@action="/login"]) and for each element do
+|step|
+|When I enter '${hr-username}' in a field with the name 'username'|
+|When I enter '${hr-password}' in a field with the name 'password'|
+|When I click on an element by the xpath '//*[@value='Login']'    |
+Then the page with the URL containing '/profile' is loaded
