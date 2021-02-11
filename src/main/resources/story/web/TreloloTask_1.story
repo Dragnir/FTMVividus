@@ -1,6 +1,6 @@
 Description: Task 1 - tests for check trello.com site;
 
-Scenario: Create few account on main trello.com page
+Scenario: Login to the main trello.com page
 Given I am on the main application page
 When I click on an element by the xpath '//a[@href='/login']'
 When I enter '${userEmail}' in a field with the name 'user' 
