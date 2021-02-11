@@ -9,7 +9,7 @@ When I enter '#{generate(regexify '[a-z]{3}[A-Z]{3}[0-9]{3}')}=' in a field by t
 When I click on an element by the xpath '//button[@class='button s-margin-top text-inherit']'
 
 Scenario: Perform search for product by search box
-Given I am on the main application page
+Given I am on a page with the URL 'https://www.walmart.com/'
 When I enter 'Pioneer FH-S52BT Double Din Bluetooth Receiver' in a field by the xpath '//*[@id='global-search-input']'
 When I click on an element by the xpath '//button[@id='global-search-submit']'
 

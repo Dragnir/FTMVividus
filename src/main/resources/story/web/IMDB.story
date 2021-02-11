@@ -1,7 +1,8 @@
 Description: Simple tests for check imdb.com site;
 
 Scenario: Log in to imdb.com main page
-Given I am on the main application page
+Given I am on a page with the URL 'https://www.imdb.com'
+
 When I click on an element by the xpath '//div[@class='ipc-button__text' and text()='Sign In']'
 When I click on an element by the xpath '//span[text()='Sign in with IMDb']'
 When I enter '${userEmail}' in a field by the xpath '//input[@id='ap_email']'
@@ -23,4 +24,4 @@ When I click on an element by the xpath '//div[text()='Watchlist']'
 
 Scenario: Sort list from Your Watchlist and export it 
 When I click on an element by the xpath '//span[@class='lister-widget-sprite lister-sort ascending']'
-When I click on an element by the xpath '//a[text()='Export this list']'
+Then I click on an element by the xpath '//a[text()='Export this list']'
