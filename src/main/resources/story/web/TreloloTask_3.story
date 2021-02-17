@@ -18,3 +18,11 @@ Examples:
 |testBaseline3|//*[@data-tab="settings"]                                 |
 |testBaseline4|//span[@aria-label='HouseIcon']							 |
 |testBaseline5|//button[@data-test-id='team-home-sidebar-upgrade-prompt']|
+
+Scenario: UI controls validation presence of element
+Given I am on the main application page
+When I find = '1' elements by By.xpath(//span[@aria-label="ApplicationSwitcherIcon"]) and for each element do
+|step|
+|When I click on an element by the xpath '//span[@aria-label="ApplicationSwitcherIcon"]'|
+|When I click on an element by the xpath '//button[@aria-label="Close popover"]'        |
+Then an alert is not present
