@@ -1,2 +1,6 @@
 {
-}
+    "TEST-TreloloTask_4": {
+        "type": "Internal",
+        "assertionPattern": "Visual check passed [The condition is false]",
+        "storyPattern":"TreloloTask_4.*"
+    }
