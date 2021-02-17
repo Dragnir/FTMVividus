@@ -8,7 +8,9 @@ When I click on an element by the xpath '//a[@data-test-id="header-member-menu-p
 Then an element by the xpath '//button//div[@title="Dragnir (dragnir)"]' exists
 
 Scenario: Visual check #1
-When I COMPARE_AGAINST baseline with `testBaseline1`
+When I COMPARE_AGAINST baseline with `testBaseline1` ignoring:
+|ELEMENT                    |
+|By.xpath(//*[@id="header"])|
 
 Scenario: Visual check #2-5
 When I compare baseline <pageBaseline> for pages located by <xPathPage>

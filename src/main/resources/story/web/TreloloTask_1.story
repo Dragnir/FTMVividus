@@ -13,4 +13,4 @@ Scenario: Create trello board
 When I wait until an element with the xpath '//li[@data-test-id="create-board-tile"]//span' appears
 When I click on an element by the xpath '//li[@data-test-id="create-board-tile"]//span'
 When I enter '#{generate(Name.firstName)}' in a field by the xpath '//input[@class='_23NUW98LaZfBpQ']'
-Then I click on an element by the xpath '//button[@data-test-id="create-board-submit-button"]'
+When I click on an element by the xpath '//button[@data-test-id="create-board-submit-button"]'

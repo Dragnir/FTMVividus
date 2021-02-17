@@ -1,6 +1,8 @@
 Composite: When I compare baseline $pageBaseline for pages located by $xPathPage
 When I click on an element by the xpath '<xPathPage>'
-When I COMPARE_AGAINST baseline with `<pageBaseline>`
+When I COMPARE_AGAINST baseline with `<pageBaseline>` ignoring:
+|ELEMENT                    |
+|By.xpath(//*[@id="header"])|
 
 Composite: When I wait and while profile available
 When I wait until an element with the xpath '//button[@data-test-id="header-member-menu-button"]' appears

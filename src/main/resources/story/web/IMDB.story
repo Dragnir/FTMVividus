@@ -24,4 +24,4 @@ When I click on an element by the xpath '//div[text()='Watchlist']'
 
 Scenario: Sort list from Your Watchlist and export it 
 When I click on an element by the xpath '//span[@class='lister-widget-sprite lister-sort ascending']'
-Then I click on an element by the xpath '//a[text()='Export this list']'
+When I click on an element by the xpath '//a[text()='Export this list']'
